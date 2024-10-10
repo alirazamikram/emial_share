@@ -1,287 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Email Share</title>
     <!-- Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Ethiopic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .anton-regular {
+        font-family: "Anton", sans-serif;
+      }
 
+      .noto-serif {
+        font-family: "Noto Serif Ethiopic", serif;
+      }
 
-<link rel="stylesheet" href="/styles.css">
-<style>
-    .anton-regular {
-  font-family: "Anton", sans-serif;
-}
+      .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+      }
 
-.noto-serif {
-  font-family: "Noto Serif Ethiopic", serif;
-}
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+      }
 
-.bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-}
+      .inter-font {
+        font-family: "Inter", sans-serif;
+      }
 
-.poppins-medium {
-  font-family: "Poppins", sans-serif;
-}
+      .telegraph {
+        font-family: "News Cycle", sans-serif;
+      }
+    </style>
+  </head>
 
-.inter-font{
-    font-family: "Inter", sans-serif;
-}
-
-.telegraph{
-    font-family: 'News Cycle', sans-serif;
-}
-</style>
-</head>
-
-<body>
-        <div class=" max-w-[794px] mx-auto relative overflow-hidden border my-3">
-            <!-- <img src="svgs/EllipseCircle.svg" alt="" class="absolute -z-20 -top-40"> -->
-             <div class="absolute -z-20 h-[600px] w-[1100px] -top-[340px] -left-[380px] md:-left-[150px] rounded-b-[500px]  bg-[#f7f7f7]"></div>
-        <div class=" px-[15px] md:px-[41px] py-[32px]">
-            <div class="flex items-center justify-between">
-                <img src="svgs/Asset 1@3x 2.svg" alt="">
-                <div class="hidden md:block ml-20">
-                    <img src="svgs/hello.svg" alt="">
-                </div>
-                <button class="inter-font bg-gradient-to-r from-[#adcdf2] to-[#b295f1] w-[150px] h-[45px] flex items-center justify-center rounded-full font-bold shadow-lg">Construction</button>
-            </div>
-            <div class=" text-center">
-                <h1 class=" text-center noto-serif text-[#F9525F] font-semibold text-2xl mt-5 md:mt-0">JT constructions</h1>
-                <h1 class=" text-center mt-[35px] font-bold">ENJOY</h1>
-                <h1 class=" text-[#F9525F]  md:text-[30px] anton-regular ">One Month Of Free Advertising</h1>
-                <h1 class="telegraph">with<span class=" font-bold telegraph"> MR Ads</span> and grow your reach effortlessly</h1>
-            </div>
+  <body>
+    <div class="max-w-[794px] mx-auto relative overflow-hidden border my-3">
+      <!-- <img src="svgs/EllipseCircle.svg" alt="" class="absolute -z-20 -top-40"> -->
+      <div
+        class="absolute -z-20 h-[600px] w-[1100px] -top-[340px] -left-[380px] md:-left-[150px] rounded-b-[500px] bg-[#f7f7f7]"
+      ></div>
+      <div class="px-[15px] md:px-[41px] py-[32px]">
+        <div class="flex items-center justify-between">
+          <img src="svgs/Asset 1@3x 2.svg" alt="" />
+          <div class="hidden md:block ml-20">
+            <img src="svgs/hello.svg" alt="" />
+          </div>
+          <button
+            class="inter-font bg-gradient-to-r from-[#adcdf2] to-[#b295f1] w-[150px] h-[45px] flex items-center justify-center rounded-full font-bold shadow-lg"
+          >
+            Construction
+          </button>
         </div>
-        <div class="  flex items-center justify-between overflow-hidden h-[100vh] md:h-[70vh] relative">
-            <img src="svgs/stars.svg" class="absolute top-10 right-20"  alt="">
-            <img src="svgs/stars.svg" class="absolute bottom-10 left-20 md:block hidden"  alt="">
-            <img src="svgs/zigzag.svg" class=" w-[350px] md:w-[300px] opacity-30 md:block hidden" alt="">
-            <img src="svgs/zigzag.svg" alt="" class="w-[300px] hidden md:block opacity-30">
-            <img src="svgs/zigzag.svg" alt="" class="w-[300px] hidden md:block opacity-30">
-            <div class="flex items-center justify-center flex-wrap h-full w-full gap-x-[50px] absolute inset-0 ">
-                <div class=" relative bg-gray-300 rounded-3xl">
-                    <img src="svgs/phone.svg" alt="" class="">
-                    <img src="svgs/house.svg" class=" absolute inset-0 m-auto" alt="">
-                </div>
-                <div class=" relative bg-gray-300 rounded-3xl hidden md:block">
-                    <img src="svgs/phone.svg"  alt="">
-                    <img src="svgs/house.svg" class=" absolute inset-0 m-auto" alt="">
-                </div>
-            </div>
+        <div class="text-center">
+          <h1
+            class="text-center noto-serif text-[#F9525F] font-semibold text-2xl mt-5 md:mt-0"
+          >
+            JT constructions
+          </h1>
+          <h1 class="text-center mt-[35px] font-bold">ENJOY</h1>
+          <h1 class="text-[#F9525F] md:text-[30px] anton-regular">
+            One Month Of Free Advertising
+          </h1>
+          <h1 class="telegraph">
+            with<span class="font-bold telegraph"> MR Ads</span> and grow your
+            reach effortlessly
+          </h1>
         </div>
-        <div class="mx-3">
-            <div class=" bg-[#d9d9d9] rounded-[30px] h-[85px] max-w-[550px] mx-auto flex items-center justify-between relative">
-                <div class="flex flex-col gap-y-2 pl-6">
-                    <h1 class=" font-medium  text-sm md:text-3xl anton-regular">One Month Free Advertisement</h1>
-                    <div class="flex items-center gap-x-2 flex-wrap w-[90%]">
-                        <span class=" text-sm md:text-base">Advertisement</span>
-                        <span><img src="svgs/Group.svg" alt=""></span>
-                        <span class=" text-sm md:text-base">All businesses</span>
-                        <span><img src="svgs/Group.svg" alt=""></span>
-                        <span class=" text-sm md:text-base">Directory</span>
-                    </div>
-                </div>
-                <span><img src="svgs/freelogo.svg" class=" absolute top-2 -right-3 md:-right-10  md:-top-10 w-1/4 md:w-1/3 " alt=""></span>
-            </div>
+      </div>
+      <div
+        class="flex items-center justify-between overflow-hidden h-[100vh] md:h-[70vh] relative"
+      >
+        <img src="svgs/stars.svg" class="absolute top-10 right-20" alt="" />
+        <img
+          src="svgs/stars.svg"
+          class="absolute bottom-10 left-20 md:block hidden"
+          alt=""
+        />
+        <img
+          src="svgs/zigzag.svg"
+          class="w-[350px] md:w-[300px] opacity-30 md:block hidden"
+          alt=""
+        />
+        <img
+          src="svgs/zigzag.svg"
+          alt=""
+          class="w-[300px] hidden md:block opacity-30"
+        />
+        <img
+          src="svgs/zigzag.svg"
+          alt=""
+          class="w-[300px] hidden md:block opacity-30"
+        />
+        <div
+          class="flex items-center justify-center flex-wrap h-full w-full gap-x-[50px] absolute inset-0"
+        >
+          <div class="relative bg-gray-300 rounded-3xl">
+            <img src="svgs/phone.svg" alt="" class="" />
+            <img src="svgs/house.svg" class="absolute inset-0 m-auto" alt="" />
+          </div>
+          <div class="relative bg-gray-300 rounded-3xl hidden md:block">
+            <img src="svgs/phone.svg" alt="" />
+            <img src="svgs/house.svg" class="absolute inset-0 m-auto" alt="" />
+          </div>
         </div>
-        <div class="flex items-center justify-center md:justify-between flex-wrap md:flex-nowrap gap-y-4 md:gap-y-0 md:gap-x-4 w-full mx-auto h-full mt-[50px] md:px-[83px] relative">
-            <img src="svgs/stars.svg" class="absolute top-32 right-0 md:block hidden"  alt="">
-            <img src="svgs/stars.svg" class="absolute top-72 left-10 md:block hidden"  alt="">
-            <div class="h-[95px] max-w-full rounded-2xl bg-gradient-to-r from-[#114db1] to-[#b769e1] flex items-center px-[20px] gap-x-4">
-                <div>
-                    <img src="svgs/eye.svg" alt="">
-                </div>
-                <div class="text-white">
-                    <h1 class="bebas-neue-regular text-2xl">1000</h1>
-                    <p class=" poppins-medium  text-xs">Quick impressions</p>
-                </div>
+      </div>
+      <div class="mx-3">
+        <div
+          class="bg-[#d9d9d9] rounded-[30px] h-[85px] max-w-[550px] mx-auto flex items-center justify-between relative"
+        >
+          <div class="flex flex-col gap-y-2 pl-6">
+            <h1 class="font-medium text-sm md:text-3xl anton-regular">
+              One Month Free Advertisement
+            </h1>
+            <div class="flex items-center gap-x-2 flex-wrap w-[90%]">
+              <span class="text-sm md:text-base">Advertisement</span>
+              <span><img src="svgs/Group.svg" alt="" /></span>
+              <span class="text-sm md:text-base">All businesses</span>
+              <span><img src="svgs/Group.svg" alt="" /></span>
+              <span class="text-sm md:text-base">Directory</span>
             </div>
-            <div class="h-[95px] max-w-full rounded-2xl bg-gradient-to-r from-[#ffd959] to-[#ff954e] flex items-center px-[20px] gap-x-4">
-                <div>
-                    <img src="svgs/conversion rate.svg" alt="">
-                </div>
-                <div class="text-white">
-                    <h1 class="bebas-neue-regular text-2xl text-black">80%</h1>
-                    <p class=" text-black poppins-medium  text-xs">Conversion Rate</p>
-                </div>
-            </div>
-            <div class="h-[95px] max-w-full rounded-2xl bg-gradient-to-r from-[#059aaf] to-[#77d55c] flex items-center px-[20px] gap-x-4">
-                <div>
-                    <img src="svgs/location.svg" alt="">
-                </div>
-                <div class="text-white">
-                    <h1 class="bebas-neue-regular text-2xl">5+</h1>
-                    <p class="poppins-medium  text-xs">Multiple Locations</p>
-                </div>
-            </div>
-           
+          </div>
+          <span
+            ><img
+              src="svgs/freelogo.svg"
+              class="absolute top-2 -right-3 md:-right-10 md:-top-10 w-1/4 md:w-1/3"
+              alt=""
+          /></span>
         </div>
-        <div class="mt-[50px] flex flex-col items-center justify-center">
-            <h1 class=" text-center font-normal md:text-3xl anton-regular">HOW TO UPLOAD AN ADVERTISEMENT?</h1>
-            <span class=" mt-[50px] px-3">
-                <img src="svgs/curved-img.svg" alt="">
-            </span>
+      </div>
+      <div
+        class="flex items-center justify-center md:justify-between flex-wrap md:flex-nowrap gap-y-4 md:gap-y-0 md:gap-x-4 w-full mx-auto h-full mt-[50px] md:px-[83px] relative"
+      >
+        <img
+          src="svgs/stars.svg"
+          class="absolute top-32 right-0 md:block hidden"
+          alt=""
+        />
+        <img
+          src="svgs/stars.svg"
+          class="absolute top-72 left-10 md:block hidden"
+          alt=""
+        />
+        <div
+          class="h-[95px] max-w-full rounded-2xl bg-gradient-to-r from-[#114db1] to-[#b769e1] flex items-center px-[20px] gap-x-4"
+        >
+          <div>
+            <img src="svgs/eye.svg" alt="" />
+          </div>
+          <div class="text-white">
+            <h1 class="bebas-neue-regular text-2xl">1000</h1>
+            <p class="poppins-medium text-xs">Quick impressions</p>
+          </div>
         </div>
-    
-    
-    
-        <!-- ------------------shanwar code start here----------- -->
-    
-        <div class="wrapper mx-auto bg-white relative">
-            <img src="svgs/stars.svg" class="absolute top-32 right-5 md:block hidden"  alt="">
-            <img src="svgs/stars.svg" class="absolute top-40 left-20 md:block hidden"  alt="">
-    
-            <div class="flex flex-col items-center py-[31px] justify-center ">
-                <!-- Download App Button -->
-                <button class="bg-[#010101] bebas-neue-regular text-white text-xl flex items-center justify-center px-8 rounded-full font-roboto hover:scale-105 ease-in-out duration-300 ">
-                    Download App
-                </button>
-        
-                <!-- Referral Code Box -->
-                <div class="bg-[#F9525F] text-white font-semibold text-lg py-2 px-6 rounded-md  ">
-                    <p class="poppins-medium  text-xs font-light  flex justify-center items-center">Refer code</p>
-                    <p class="poppins-medium  md:text-2xl text-xl font-semibold">MRCORP</p>
-                </div> 
-            </div>
-            <!-- ADDITION END -->
-        
-            <div class=" relative">
-                <img src="svgs/stars.svg" class="absolute top-56 right-32 md:block hidden"  alt="">
-    
-                <!-- first part -->
-                <div class="flex flex-wrap gap-[20px] justify-center items-center md:justify-between m-auto w-full py-[32px] px-[34px] ">
-                    <img class="w-auto " src="svgs/leftflower.svg" alt="">
-                    <div class="cursor-pointer hover:scale-105 ease-in-out duration-300  ">
-                        <img class="w-auto " src="svgs/qrcode.svg" alt="">
-                    </div>
-                    <img class="w-auto " src="svgs/rightflower.svg" alt="">
-                </div>
-                <!-- 2nd part -->
-                <div class="sm:flex sm:flex-row flex-col w-full items-center sm:justify-between max-w-[85%] m-auto">
-                    <div class="flex sm:w-1/2 flex-col gap-5">
-                        <h1 class="sm:text-3xl text-2xl font-semibold inline-block text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]">
-                            <span class="font-light">Reach Your <span class="font-semibold">Customers</span> Directly and 
-                            <span class="font-semibold">Grow</span> Your</span> <span class="font-semibold">Business</span>
-                        </h1>
-                        <p class="text-sm sm:text-base sm:leading-8 font-montserrat text-gray-600">At MR, we understand the importance of effective advertising. That’s why we offer a unique service that ensures your advertisements are delivered straight to your customers' inboxes. This direct approach guarantees higher visibility and engagement, leading to exceptional conversion rates.</p>
-                       
-                    </div>
-                    <div class="sm:w-1/2 flex justify-end">
-                        <img class="w-[95%] sm:w-[550px]" alt="Image" src="svgs/Red and Green Illustrative Restaurant Voucher Coupon (1) 1.svg" />
-                    </div>
-                </div>
-        
-                <div class="w-[90%] m-auto text-center flex flex-col sm:gap-24 mt-8">
-                    <h1 class=" md:text-2xl font-semibold inline-block text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]">
-                        Why Choose Our Direct-to-Inbox Advertising?
-                    </h1>
-                    <div class="sm:flex sm:flex-row items-center gap-12 justify-center mt-10 md:mt-0 sm:border-orange-600 sm:border rounded-full w-full  h-[40px] sm:border-dashed m-auto">
-                        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12">
-                            <div class="flex items-center justify-center p-3 w-[100px]  h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto">
-                                <h1 class="text-white text-sm font-semibold text-center">Guaranteed Delivery</h1>
-                            </div>
-                            <div class="flex items-center justify-center p-3 w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto">
-                                <h1 class="text-white text-sm font-semibold text-center">Higher Engagement</h1>
-                            </div>
-                            <div class="flex items-center justify-center p-3 w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto">
-                                <h1 class="text-white text-sm font-semibold text-center">Personalized Content</h1>
-                            </div>
-                            <div class="flex items-center justify-center p-3 w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto">
-                                <h1 class="text-white text-sm font-semibold text-center">Proven Results</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="flex bg-gray-200 md:h-[130px] w-full items-center justify-center mt-60 md:mt-16">
-                    <div class="flex flex-wrap gap-4 py-4 mx-12 w-full justify-between">
-                        <div class="flex flex-col items-center justify-center">
-                            <h1 class=" text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]">12,000+</h1>
-                            <p class="sm:text-sm text-sm font-semibold text-center"> Ads published </p>
-                        </div>
-                        <div class="flex flex-col items-center justify-center">
-                            <h1 class=" text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]">8,000+</h1>
-                            <p class="sm:text-sm text-sm font-semibold text-center">Clients</p>
-                        </div>
-                        <div class="flex flex-col items-center justify-center">
-                            <h1 class="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]">2.5M+</h1>
-                            <p class="sm:text-sm text-sm font-semibold text-center"> Users reached</p>
-                        </div>
-                        <div class="flex flex-col items-center justify-center">
-                            <h1 class=" text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]">23%</h1>
-                            <p class="sm:text-sm text-sm font-semibold text-center"> Conversion rate</p>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Call to Action Banner -->
-                <div class="bg-white  mt-16">
-                    <img src="svgs/stars.svg" class="absolute bottom-20 right-10 md:block hidden"  alt="">
-                    <div class="text-center">
-                        <h2 class="md:text-2xl  font-normal text-[#F9525F] mb-6 anton-regular">MR ADS COST ALMOST NOTHING, <br /><span class="text-[#010101]"> YET CAN SKYROCKET YOUR BUSINESS GROWTH!</span></h2>
-        
-                        <button class="bg-[#F9525F] hover:scale-105 ease-in-out duration-300 hover:bg-red-[#F9525F] text-white font-base py-[8px] px-[22px] rounded-full ">
-                            Subscribe now
-                        </button>
-                    </div>
-                </div>
-                        <div class="flex  justify-center items-center bg-white">
-                            <img class="" src="svgs/bordersvg.svg" alt="">
-                            <div class="text-black anton-regular">Follow us:</div>
-                            <img class="" src="svgs/bordersvg.svg" alt="">
-                        </div>
-                        <div class="flex gap-[20px] justify-center items-center py-[18px] bg-white">
-                            <a href="#" class="text-blue-600 hover:text-blue-700"></a>
-                                <!-- Facebook Icon -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M22.675 0H1.325C.594 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.499v-9.294H9.847V12.04h2.978V9.356c0-2.936 1.792-4.533 4.41-4.533 1.254 0 2.333.093 2.648.135v3.07l-1.815.001c-1.422 0-1.697.676-1.697 1.666v2.184h3.392l-.441 2.667h-2.951V24h5.789c.73 0 1.324-.593 1.324-1.325V1.325C24 .593 23.407 0 22.675 0z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="text-pink-500 hover:text-pink-600">
-                                <!-- Instagram Icon -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.307 3.608 1.281.974.974 1.219 2.241 1.281 3.608.058 1.266.07 1.646.07 4.849 0 3.204-.012 3.583-.07 4.849-.062 1.367-.307 2.634-1.281 3.608-.975.975-2.242 1.219-3.608 1.281-1.266.058-1.646.07-4.849.07-3.204 0-3.583-.012-4.849-.07-1.367-.062-2.634-.307-3.608-1.281-.974-.974-1.219-2.241-1.281-3.608-.058-1.266-.07-1.646-.07-4.849 0-3.204.012-3.583.07-4.849.062-1.367.307-2.634 1.281-3.608.975-.974 2.241-1.219 3.608-1.281 1.266-.058 1.646-.07 4.849-.07zm0-2.163C8.756 0 8.33.014 7.052.073 5.775.131 4.503.374 3.472 1.406 2.441 2.438 2.199 3.711 2.141 4.988 2.083 6.267 2.07 6.693 2.07 12s.013 5.733.071 7.011c.058 1.277.301 2.55 1.332 3.582 1.031 1.032 2.304 1.274 3.581 1.332 1.277.058 1.703.071 7.011.071s5.733-.013 7.011-.071c1.277-.058 2.55-.301 3.582-1.332 1.032-1.032 1.274-2.305 1.332-3.582.058-1.278.071-1.704.071-7.011s-.013-5.733-.071-7.011c-.058-1.277-.301-2.55-1.332-3.582-1.032-1.032-2.305-1.274-3.582-1.332C15.733.014 15.307 0 12 0zM12 5.838a6.163 6.163 0 1 0 0 12.326 6.163 6.163 0 0 0 0-12.326zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-10.845a1.44 1.44 0 1 0 0-2.879 1.44 1.44 0 0 0 0 2.879z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="text-blue-400 hover:text-blue-500">
-                                <!-- Twitter Icon -->
-                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23.643 4.937c-.835.371-1.73.623-2.675.735a4.807 4.807 0 0 0 2.088-2.656 9.605 9.605 0 0 1-3.047 1.165 4.792 4.792 0 0 0-8.168 4.37A13.614 13.614 0 0 1 1.671 3.149a4.79 4.79 0 0 0 1.482 6.386 4.752 4.752 0 0 1-2.172-.6v.06a4.793 4.793 0 0 0 3.844 4.699 4.784 4.784 0 0 1-2.168.082 4.795 4.795 0 0 0 4.476 3.328 9.616 9.616 0 0 1-5.957 2.054c-.386 0-.768-.023-1.145-.067a13.557 13.557 0 0 0 7.337 2.147c8.81 0 13.628-7.297 13.628-13.628l-.016-.62a9.762 9.762 0 0 0 2.403-2.482z" />
-                                </svg>
-                            </a>
-                        </div>
-                   
-               
-            </div>
+        <div
+          class="h-[95px] max-w-full rounded-2xl bg-gradient-to-r from-[#ffd959] to-[#ff954e] flex items-center px-[20px] gap-x-4"
+        >
+          <div>
+            <img src="svgs/conversion rate.svg" alt="" />
+          </div>
+          <div class="text-white">
+            <h1 class="bebas-neue-regular text-2xl text-black">80%</h1>
+            <p class="text-black poppins-medium text-xs">Conversion Rate</p>
+          </div>
         </div>
+        <div
+          class="h-[95px] max-w-full rounded-2xl bg-gradient-to-r from-[#059aaf] to-[#77d55c] flex items-center px-[20px] gap-x-4"
+        >
+          <div>
+            <img src="svgs/location.svg" alt="" />
+          </div>
+          <div class="text-white">
+            <h1 class="bebas-neue-regular text-2xl">5+</h1>
+            <p class="poppins-medium text-xs">Multiple Locations</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-[50px] flex flex-col items-center justify-center">
+        <h1 class="text-center font-normal md:text-3xl anton-regular">
+          HOW TO UPLOAD AN ADVERTISEMENT?
+        </h1>
+        <span class="mt-[50px] px-3">
+          <img src="svgs/curved-img.svg" alt="" />
+        </span>
+      </div>
+
+      <!-- ------------------shanwar code start here----------- -->
+
+      <div class="wrapper mx-auto bg-white relative">
+        <img
+          src="svgs/stars.svg"
+          class="absolute top-32 right-5 md:block hidden"
+          alt=""
+        />
+        <img
+          src="svgs/stars.svg"
+          class="absolute top-40 left-20 md:block hidden"
+          alt=""
+        />
+
+        <div class="flex flex-col items-center py-[31px] justify-center">
+          <!-- Download App Button -->
+          <button
+            class="bg-[#010101] bebas-neue-regular text-white text-xl flex items-center justify-center px-8 rounded-full font-roboto hover:scale-105 ease-in-out duration-300"
+          >
+            Download App
+          </button>
+
+          <!-- Referral Code Box -->
+          <div
+            class="bg-[#F9525F] text-white font-semibold text-lg py-2 px-6 rounded-md"
+          >
+            <p
+              class="poppins-medium text-xs font-light flex justify-center items-center"
+            >
+              Refer code
+            </p>
+            <p class="poppins-medium md:text-2xl text-xl font-semibold">
+              MRCORP
+            </p>
+          </div>
+        </div>
+        <!-- ADDITION END -->
+
+        <div class="relative">
+          <img
+            src="svgs/stars.svg"
+            class="absolute top-56 right-32 md:block hidden"
+            alt=""
+          />
+
+          <!-- first part -->
+          <div
+            class="flex flex-wrap gap-[20px] justify-center items-center md:justify-between m-auto w-full py-[32px] px-[34px]"
+          >
+            <img class="w-auto" src="svgs/leftflower.svg" alt="" />
+            <div
+              class="cursor-pointer hover:scale-105 ease-in-out duration-300"
+            >
+              <img class="w-auto" src="svgs/qrcode.svg" alt="" />
+            </div>
+            <img class="w-auto" src="svgs/rightflower.svg" alt="" />
+          </div>
+          <!-- 2nd part -->
+          <div
+            class="sm:flex sm:flex-row flex-col w-full items-center sm:justify-between max-w-[85%] m-auto"
+          >
+            <div class="flex sm:w-1/2 flex-col gap-5">
+              <h1
+                class="sm:text-3xl text-2xl font-semibold inline-block text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]"
+              >
+                <span class="font-light"
+                  >Reach Your
+                  <span class="font-semibold">Customers</span> Directly and
+                  <span class="font-semibold">Grow</span> Your</span
+                >
+                <span class="font-semibold">Business</span>
+              </h1>
+              <p
+                class="text-sm sm:text-base sm:leading-8 font-montserrat text-gray-600 !leading-normal"
+              >
+                At MR, we understand the importance of effective advertising.
+                That’s why we offer a unique service that ensures your
+                advertisements are delivered straight to your customers'
+                inboxes. This direct approach guarantees higher visibility and
+                engagement, leading to exceptional conversion rates.
+              </p>
+            </div>
+            <div class="sm:w-1/2 flex justify-end">
+              <img
+                class="w-[95%] sm:w-[550px]"
+                alt="Image"
+                src="svgs/Red and Green Illustrative Restaurant Voucher Coupon (1) 1.svg"
+              />
+            </div>
+          </div>
+
+          <div class="w-[90%] m-auto text-center flex flex-col sm:gap-24 mt-8">
+            <h1
+              class="md:text-2xl font-semibold inline-block text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]"
+            >
+              Why Choose Our Direct-to-Inbox Advertising?
+            </h1>
+            <div
+              class="sm:flex sm:flex-row items-center gap-12 justify-center mt-10 md:mt-0 sm:border-orange-600 sm:border rounded-full w-full h-[40px] sm:border-dashed m-auto"
+            >
+              <div
+                class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-12"
+              >
+                <div
+                  class="flex items-center justify-center p-3 w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto"
+                >
+                  <h1 class="text-white text-sm font-semibold text-center">
+                    Guaranteed Delivery
+                  </h1>
+                </div>
+                <div
+                  class="flex items-center justify-center p-3 w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto"
+                >
+                  <h1 class="text-white text-sm font-semibold text-center">
+                    Higher Engagement
+                  </h1>
+                </div>
+                <div
+                  class="flex items-center justify-center p-3 w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto"
+                >
+                  <h1 class="text-white text-sm font-semibold text-center">
+                    Personalized Content
+                  </h1>
+                </div>
+                <div
+                  class="flex items-center justify-center p-3 w-[100px] h-[100px] rounded-full bg-gradient-to-b from-[#e94f49] to-[#f07d40] m-auto"
+                >
+                  <h1 class="text-white text-sm font-semibold text-center">
+                    Proven Results
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex bg-gray-200 md:h-[130px] w-full items-center justify-center mt-60 md:mt-16"
+          >
+            <div class="flex flex-wrap gap-4 py-4 mx-12 w-full justify-between">
+              <div class="flex flex-col items-center justify-center">
+                <h1
+                  class="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]"
+                >
+                  12,000+
+                </h1>
+                <p class="sm:text-sm text-sm font-semibold text-center">
+                  Ads published
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <h1
+                  class="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]"
+                >
+                  8,000+
+                </h1>
+                <p class="sm:text-sm text-sm font-semibold text-center">
+                  Clients
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <h1
+                  class="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]"
+                >
+                  2.5M+
+                </h1>
+                <p class="sm:text-sm text-sm font-semibold text-center">
+                  Users reached
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center">
+                <h1
+                  class="text-xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#F84145] to-[#EFB635]"
+                >
+                  23%
+                </h1>
+                <p class="sm:text-sm text-sm font-semibold text-center">
+                  Conversion rate
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call to Action Banner -->
+          <div class="bg-white mt-16">
+            <img
+              src="svgs/stars.svg"
+              class="absolute bottom-20 right-10 md:block hidden"
+              alt=""
+            />
+            <div class="text-center">
+              <h2
+                class="md:text-2xl font-normal text-[#F9525F] mb-6 anton-regular"
+              >
+                MR ADS COST ALMOST NOTHING, <br /><span class="text-[#010101]">
+                  YET CAN SKYROCKET YOUR BUSINESS GROWTH!</span
+                >
+              </h2>
+
+              <button
+                class="bg-[#F9525F] hover:scale-105 ease-in-out duration-300 hover:bg-red-[#F9525F] text-white font-base py-[8px] px-[22px] rounded-full"
+              >
+                Subscribe now
+              </button>
+            </div>
+          </div>
+          <div class="flex justify-center items-center bg-white my-3">
+            <img class="w-[250px] hidden md:block" src="svgs/bordersvg.svg" alt="" />
+            <div class="text-black anton-regular mx-3">Follow us:</div>
+            <img class="w-[250px] hidden md:block" src="svgs/bordersvg.svg" alt="" />
+          </div>
+          <div
+            class="flex gap-[20px] justify-center items-center py-[18px] bg-white"
+          >
+            <img class="w-[36px] h-[36px]" src="svgs/facebook (3).svg" alt="" />
+            <img
+              class="w-[36px] h-[36px]"
+              src="svgs/instagram (2).svg"
+              alt=""
+            />
+            <img class="w-[36px] h-[36px]" src="svgs/twitter (2).svg" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
