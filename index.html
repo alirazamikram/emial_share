@@ -96,6 +96,646 @@
         overflow: hidden;
         border: 1px solid #e5e7eb; /* Default Tailwind border color */
       }
+      @media (max-width: 768px) {
+        .container-class {
+        max-width: 794px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: relative !important;
+        overflow: hidden !important;
+        border: 1px solid #e5e7eb !important; /* Default Tailwind border color */
+      }
+
+        .background-shape {
+          position: absolute !important;
+          z-index: -20 !important;
+          height: 620px !important;
+          width: 1100px !important;
+          top: -340px !important;
+          left: -390px !important;
+          border-bottom-left-radius: 500px !important;
+          border-bottom-right-radius: 500px !important;
+          background-color: #f7f7f7 !important;
+        }
+
+        .element {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+          padding-top: 16px !important;
+          padding-bottom: 16px !important;
+        }
+        .constructions {
+          display: flex !important;
+          align-items: center !important; /* This aligns items vertically in the center */
+          justify-content: space-between !important; /* This spaces out items with space in between */
+        }
+
+        .element1 {
+          display: none !important; /* Initially hidden */
+          width: 40px !important; /* Width for small screens */
+        }
+        .button-cons {
+          font-family: "Inter", sans-serif !important; /* Ensure you have the Inter font imported */
+          background: linear-gradient(
+            to right,
+            #adcdf2,
+            #b295f1
+          ) !important; /* Gradient background */
+          width: 100px !important; /* Width for small screens */
+          height: 30px !important; /* Height for small screens */
+          display: flex !important; /* Enable flexbox */
+          align-items: center !important; /* Center items vertically */
+          justify-content: center !important; /* Center items horizontally */
+          border-radius: 9999px !important; /* Fully rounded */
+          font-size: 12px !important; /* Text size for small screens */
+          font-weight: normal !important; /* Normal font weight */
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2) !important; /* Shadow effect */
+        }
+        .textcenter {
+          text-align: center !important; /* Center-aligns the text within the element */
+        }
+        .hello {
+          width: 100% !important; /* Full width */
+          display: flex !important; /* Enable flexbox */
+          justify-content: center !important; /* Center items horizontally */
+          margin-top: 1.25rem !important; /* Margin top (5 units in Tailwind, where 1 unit = 0.25rem) */
+        }
+        .jtconst {
+          text-align: center !important; /* Center-aligns the text within the element */
+          color: #f9525f !important; /* Text color */
+          font-weight: 600 !important; /* Semi-bold font weight */
+          font-size: 1.5rem !important; /* Font size for 2xl (2rem = 32px, 1rem = 16px) */
+        }
+
+        .enjoy {
+          text-align: center !important; /* Center-aligns the text */
+          padding-top: 1rem !important; /* Padding top for small screens (4 units in Tailwind, where 1 unit = 0.25rem) */
+          font-weight: bold !important; /* Bold font weight */
+        }
+        .onemonth {
+          color: #f9525f !important; /* Text color */
+          font-family: "Anton", sans-serif !important; /* Ensure Anton font is imported */
+          font-weight: normal !important; /* Assuming 'regular' means normal weight */
+          font-size: 16px !important;
+        }
+        .bold {
+          font-weight: bold !important; /* Sets the font weight to bold */
+        }
+        .mobilecontain {
+          display: flex !important; /* Enable flexbox */
+          align-items: center !important; /* Vertically center the items */
+          justify-content: space-between !important; /* Spread items out with space between */
+          overflow: hidden !important; /* Hide overflow content */
+          height: fit-content !important; /* Adjust height to fit the content */
+          position: relative !important; /* Set the position to relative */
+          margin-top: 3.5rem !important; /* Margin top for small screens (14 units * 0.25rem) */
+        }
+
+        .star1 {
+          position: absolute !important;
+          top: 2.5rem !important;
+          right: 1.25rem !important;
+        }
+
+        .star2 {
+          position: absolute !important;
+          bottom: 2.5rem !important;
+          left: 5rem !important;
+          display: none !important;
+        }
+
+        .zigzag1 {
+        width: 350px !important; /* Width for small screens */
+        opacity: 0.3 !important; /* 30% opacity */
+        display: none !important; /* Initially hidden */
+      }
+
+        .zigzag2 {
+          width: 300px !important;
+          display: none !important;
+          opacity: 0.3 !important;
+        }
+
+        .zigzag3 {
+          width: 300px !important;
+          display: none !important;
+          opacity: 0.3 !important;
+        }
+
+        .jtconst1 {
+          display: flex !important;
+          gap: 3rem !important;
+          align-items: center !important;
+          justify-content: center !important;
+          flex-wrap: wrap !important;
+          height: 100% !important;
+          width: 100% !important;
+          position: relative !important;
+
+        }
+
+        .onemonthcontain {
+          margin-left: 0.5rem !important;
+          margin-right: 0.5rem !important;
+          margin-top: 1.25rem !important;
+        }
+
+        .onemonthbox {
+          background-color: #d9d9d9 !important;
+          border-radius: 30px !important;
+          height: 90px !important;
+          max-width: 550px !important;
+          margin-left: 0 !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: space-between !important;
+          position: relative !important;
+        }
+
+        .onemonthouter {
+          display: flex !important;
+          flex-direction: column !important;
+          gap: 0.5rem !important;
+          padding-left: 1.5rem !important;
+        }
+
+        .onemonthinner {
+          font-weight: 500 !important;
+          font-size: 1rem !important;
+        }
+
+        .advertismentouter {
+          display: flex !important;
+          align-items: center !important;
+          gap: 0.5rem !important;
+          flex-wrap: wrap !important;
+          width: 90% !important;
+        }
+
+        .textsize {
+          font-size: 0.875rem !important;
+        }
+
+        .freelogo {
+          position: absolute !important;
+          top: -12px !important;
+          right: -12px !important;
+          width: 35% !important;
+        }
+
+        .boxes {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          flex-wrap: wrap !important;
+          gap: 1rem !important;
+          width: 100% !important;
+          padding-left: 0.5rem !important;
+          padding-right: 0.5rem !important;
+          height: 100% !important;
+          margin-top: 50px !important;
+          position: relative !important;
+        }
+
+        .stars1 {
+          position: absolute !important;
+          top: 8rem !important;
+          right: 0 !important;
+          display: none !important;
+        }
+        .stars2 {
+          position: absolute !important;
+          top: 18rem !important;
+          left: 2.5rem !important;
+          display: none !important;
+        }
+        .purplebox {
+          height: 95px !important;
+          width: 100% !important;
+          border-radius: 1rem !important;
+          background: linear-gradient(to right, #114db1, #b769e1) !important;
+          display: flex !important;
+          align-items: center !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          column-gap: 1rem !important;
+        }
+        .textwhite {
+          color: white !important;
+        }
+        .text2xlsize {
+          font-size: 1.5rem !important;
+          line-height: 2rem !important;
+        }
+        .textxs {
+          font-size: 0.75rem !important;
+          line-height: 1rem !important;
+        }
+        .yellowbox {
+          height: 95px !important;
+          width: 100% !important;
+          border-radius: 1rem !important;
+          background: linear-gradient(to right, #ffd959, #ff954e) !important;
+          display: flex !important;
+          align-items: center !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          column-gap: 1rem !important;
+        }
+        .textblack {
+          color: #000 !important;
+        }
+        .textsm {
+          font-size: 0.875rem !important;
+          line-height: 1.25rem !important;
+        }
+        .greenbox {
+          height: 95px !important;
+          width: 100% !important;
+          border-radius: 1rem !important;
+          background: linear-gradient(to right, #059aaf, #77d55c) !important;
+          display: flex !important;
+          align-items: center !important;
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+          column-gap: 1rem !important;
+        }
+        .howtouploadouter {
+          margin-top: 25px !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+        }
+        .textcenter {
+          text-align: center !important;
+        }
+        .text3xl {
+          font-size: 16px !important;
+          /* line-height: 2.25rem !important; */
+          line-height: normal !important;
+        }
+        .infographics {
+          padding-left: 0.75rem !important;
+          padding-right: 0.75rem !important;
+          margin-top: 25px !important;
+        }
+        .wrapperclass {
+          margin-left: auto !important;
+          margin-right: auto !important;
+          background-color: white !important;
+          position: relative !important;
+        }
+        .stars3 {
+          position: absolute !important;
+          top: 8rem !important;
+          right: 1.25rem !important;
+          display: none !important;
+        }
+        .stars4 {
+          position: absolute !important;
+          top: 10rem !important;
+          left: 5rem !important;
+          display: none !important;
+        }
+        .buttonouter {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          padding-top: 32px !important;
+        }
+        .buttonsdownload {
+          padding-top: 0.25rem !important;
+          background-color: #010101 !important;
+          width: 252px !important;
+          height: 41px !important;
+          font-family: "Bebas Neue", sans-serif !important;
+          color: white !important;
+          font-size: 1.875rem !important;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          border-radius: 9999px !important;
+          transition: transform 0.3s ease-in-out !important;
+        }
+        .buttonsdownload:hover {
+          transform: scale(1.05) !important;
+        }
+        .referouter {
+          background-color: #f9525f !important;
+          color: white !important;
+          font-weight: 600 !important;
+          font-size: 1.125rem !important;
+          padding-top: 0.5rem !important;
+          padding-bottom: 0.5rem !important;
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
+          border-bottom-left-radius: 1rem !important;
+          border-bottom-right-radius: 1rem !important;
+          width: 188px !important;
+          height: 95px !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: center !important;
+          row-gap: 0.75rem !important;
+        }
+        .refercode {
+          font-weight: 300 !important;
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+        }
+        .mrcorp {
+          font-size: 1.25rem !important;
+          font-weight: 600 !important;
+        }
+
+        .relativeclass {
+          position: relative !important; /* Equivalent to relative */
+        }
+
+        .stars5 {
+          position: absolute !important; /* Equivalent to absolute */
+          top: 14rem !important; /* Equivalent to top-56 (56 * 0.25rem = 14rem) */
+          right: 8rem !important; /* Equivalent to right-32 (32 * 0.25rem = 8rem) */
+          display: none !important; /* Equivalent to hidden */
+        }
+
+        .flowerouter {
+          display: flex !important; /* Equivalent to flex */
+          flex-wrap: wrap !important; /* Equivalent to flex-wrap */
+          gap: 20px !important; /* Equivalent to gap-[20px] */
+          justify-content: center !important; /* Equivalent to justify-center */
+          align-items: center !important; /* Equivalent to items-center */
+          margin: auto !important; /* Equivalent to m-auto */
+          width: 100% !important; /* Equivalent to w-full */
+          padding-top: 32px !important; /* Equivalent to py-[32px] (padding-top and padding-bottom) */
+          padding-bottom: 32px !important;
+          padding-left: 34px !important; /* Equivalent to px-[34px] (padding-left and padding-right) */
+          padding-right: 34px !important;
+        }
+
+        .flowerinter {
+          display: flex !important; /* Equivalent to flex */
+          gap: 0.75rem !important; /* Equivalent to gap-3 (3 * 0.25rem = 0.75rem) */
+          align-items: center !important; /* Equivalent to items-center */
+        }
+
+        .flower {
+          display: flex !important; /* Equivalent to flex */
+          flex-direction: column !important; /* Equivalent to flex-col */
+          gap: 0.75rem !important; /* Equivalent to gap-3 (3 * 0.25rem = 0.75rem) */
+          align-items: center !important; /* Equivalent to items-center */
+          cursor: pointer !important; /* Equivalent to cursor-pointer */
+          transition: transform 0.3s ease-in-out !important; /* Equivalent to ease-in-out duration-300 */
+        }
+
+        /* Hover effect */
+        .flower:hover {
+          transform: scale(1.05) !important; /* Equivalent to hover:scale-105 */
+        }
+
+        .reachouter {
+          display: flex !important; /* Equivalent to flex */
+          flex-direction: column !important; /* Default to flex-col */
+          width: 100% !important; /* Equivalent to w-full */
+          align-items: center !important; /* Equivalent to items-center */
+          max-width: 85% !important; /* Equivalent to max-w-[85%] */
+          margin: auto !important; /* Equivalent to m-auto */
+        }
+
+        .reachinner {
+          display: flex !important; /* Equivalent to flex */
+          flex-direction: column !important; /* Equivalent to flex-col */
+          gap: 1.25rem !important; /* Equivalent to gap-5 (5 * 0.25rem = 1.25rem) */
+          width: 100% !important;
+        }
+
+        .reach {
+          font-size: 1.5rem !important; /* Equivalent to text-2xl (24px) */
+          font-weight: 600 !important; /* Equivalent to font-semibold */
+          display: inline-block !important; /* Equivalent to inline-block */
+          color: transparent !important; /* Equivalent to text-transparent */
+          background-clip: text !important; /* Equivalent to bg-clip-text */
+          background-image: linear-gradient(
+            to bottom,
+            #f84145,
+            #efb635
+          ) !important; /* Equivalent to bg-gradient-to-b from-[#F84145] to-[#EFB635] */
+          -webkit-background-clip: text !important; /* Required for some browsers to support background clip */
+        }
+
+        .fontlight {
+          font-weight: 300 !important; /* Equivalent to font-light */
+        }
+
+        .fontsemibold {
+          font-weight: 600 !important; /* Equivalent to font-semibold */
+        }
+
+        .atmrpara {
+          font-size: 0.875rem !important; /* Equivalent to text-sm (14px) */
+          color: #4b5563 !important; /* Equivalent to text-gray-600 */
+          line-height: normal !important; /* Equivalent to !leading-normal */
+        }
+
+        .imgdev {
+          display: flex !important; /* Equivalent to flex */
+          justify-content: flex-end !important; /* Equivalent to justify-end */
+          width: 100% !important; /* Default width */
+        }
+
+        .coupenimg {
+          width: 100% !important; /* Equivalent to w-full */
+          margin-left: auto !important; /* Equivalent to mx-auto (centers element horizontally) */
+          margin-right: auto !important; /* Equivalent to mx-auto (centers element horizontally) */
+        }
+
+        .choseusouter {
+          width: 75% !important; /* Equivalent to w-[75%] */
+          margin-left: auto !important; /* Equivalent to m-auto (centers element horizontally) */
+          margin-right: auto !important; /* Equivalent to m-auto (centers element horizontally) */
+          text-align: center !important; /* Equivalent to text-center */
+          display: flex !important; /* Equivalent to flex */
+          flex-direction: column !important; /* Equivalent to flex-col */
+          margin-top: 2rem !important; /* Equivalent to mt-8 (32px) */
+        }
+
+        .choseus {
+          font-size: 1.125rem !important; /* Equivalent to text-lg (18px) */
+          font-weight: 600 !important; /* Equivalent to font-semibold */
+          display: inline-block !important; /* Equivalent to inline-block */
+          color: transparent !important; /* Equivalent to text-transparent */
+          background-clip: text !important; /* Equivalent to bg-clip-text */
+          background-image: linear-gradient(
+            to bottom,
+            #e94f49,
+            #f07d40
+          ) !important; /* Equivalent to bg-gradient-to-b from-[#e94f49] to-[#f07d40] */
+          padding-bottom: 8rem !important; /* Equivalent to pb-8 (32px) */
+        }
+
+        /* Note: Ensure to include webkit prefix for background-clip */
+        .choseus {
+          -webkit-background-clip: text !important; /* Required for some browsers to support background clip */
+        }
+
+        .dashedborder {
+          display: flex !important; /* Equivalent to flex */
+          flex-direction: column !important; /* Default direction, will be overridden in media query */
+          align-items: center !important; /* Equivalent to items-center */
+          gap: 3rem !important; /* Equivalent to gap-12 (48px) */
+          justify-content: center !important; /* Equivalent to justify-center */
+          width: 100% !important; /* Equivalent to w-full */
+          height: 40px !important; /* Equivalent to h-[40px] */
+          margin-left: auto !important; /* Equivalent to m-auto (centers element horizontally) */
+          margin-right: auto !important; /* Equivalent to m-auto (centers element horizontally) */
+          border: none !important;
+        }
+
+        .circlesouterdiv {
+          display: grid !important;
+          grid-template-columns: repeat(2, 1fr) !important;
+          gap: 2rem !important;
+        }
+        .firstcircle {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          padding: 0.75rem !important;
+          width: 100px !important;
+          height: 100px !important;
+          border-radius: 9999px !important;
+          background-image: linear-gradient(
+            to bottom,
+            #e94f49,
+            #f07d40
+          ) !important;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        .firstcircletext {
+          color: white !important;
+          font-size: 0.875rem !important;
+          text-align: center !important;
+          font-weight: 500 !important;
+        }
+        .rectangleouter {
+          display: flex !important;
+          background-color: #e5e7eb !important;
+          width: 100% !important;
+          align-items: center !important;
+          justify-content: center !important;
+          margin-top: 10rem !important;
+          height: 220px !important;
+          
+        }
+        .rectangleouter2 {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          gap: 1rem !important;
+          padding-top: 1rem !important;
+          padding-bottom: 1rem !important;
+          margin-left: 3rem !important;
+          margin-right: 3rem !important;
+          width: 100% !important;
+          justify-content: center !important;
+        }
+        .rectanglefirst {
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: center !important;
+          justify-content: space-between !important;
+        }
+        .rectangletext1 {
+          font-size: 1.25rem !important;
+          font-weight: bold !important;
+          color: transparent !important;
+          background-clip: text !important;
+          background-image: linear-gradient(
+            to bottom,
+            #e94f49,
+            #f07d40
+          ) !important;
+        }
+        .rectangletext2 {
+          font-size: 0.875rem !important;
+          font-weight: 600 !important;
+          text-align: center !important;
+          color: #4a5568 !important;
+          font-family: "Poppins", sans-serif !important;
+        }
+        .mrads {
+          margin-top: 2rem !important;
+        }
+        .starz {
+          position: absolute !important;
+          bottom: 5rem !important;
+          right: 2.5rem !important;
+          display: none !important;
+        }
+        .mradstext {
+          font-size: 1rem !important;
+          font-weight: 400 !important;
+          color: #f9525f !important;
+          margin-bottom: 1.5rem !important;
+        }
+        .blackcolor {
+          color: #010101 !important;
+        }
+        .subscribebutton {
+          background-color: #f9525f !important;
+          color: white !important;
+          font-size: 1rem !important;
+          padding-top: 8px !important;
+          padding-bottom: 8px !important;
+          padding-left: 22px !important;
+          padding-right: 22px !important;
+          border-radius: 9999px !important;
+          transition: transform 0.3s ease-in-out,
+            background-color 0.3s ease-in-out !important;
+        }
+        .subscribebutton:hover {
+          transform: scale(1.05) !important;
+          background-color: #f9525f !important;
+        }
+        .followusouter {
+          display: flex !important;
+          justify-content: center !important;
+          align-items: center !important;
+          background-color: white !important;
+          padding-top: 1.25rem !important;
+          padding-bottom: 1.25rem !important;
+        }
+        .bar1 {
+          width: 250px !important;
+          display: none !important;
+        }
+
+        .followus {
+          color: black !important;
+          font-weight: 600 !important;
+          margin-left: 0.75rem !important;
+          margin-right: 0.75rem !important;
+        }
+
+        .iconsouter {
+          display: flex !important;
+          gap: 20px !important;
+          justify-content: center !important;
+          align-items: center !important;
+          background-color: white !important;
+          padding-bottom: 1rem !important;
+        }
+
+        .iconslength {
+          width: 36px !important;
+          height: 36px !important;
+        }
+      }
+      /* LLLLLLLLLLLLLAAAAAAAAAAAAAAAARRRRRRRRRRRRRRGGGGGGGGGGGGGGGGGGEEEEEEEEEEEEEEEEE */
       .background-shape {
         position: absolute;
         z-index: -20;
@@ -256,24 +896,11 @@
         }
       }
 
-      .star1 {
-        position: absolute; /* Set the element's position to absolute */
-        top: 2.5rem; /* 10 units * 0.25rem = 2.5rem or 40px */
-        right: 1.25rem; /* 5 units * 0.25rem = 1.25rem or 20px */
-      }
-
       /* Media query for medium and larger screens */
       @media (min-width: 768px) {
         .star1 {
           right: 5rem; /* 20 units * 0.25rem = 5rem or 80px */
         }
-      }
-
-      .star2 {
-        position: absolute; /* Set position to absolute */
-        bottom: 2.5rem; /* 10 units * 0.25rem = 2.5rem or 40px */
-        left: 5rem; /* 20 units * 0.25rem = 5rem or 80px */
-        display: none; /* Initially hidden */
       }
 
       /* Media query for medium and larger screens */
@@ -297,12 +924,6 @@
         }
       }
 
-      .zigzag2 {
-        width: 300px; /* Set width to 300px */
-        display: none; /* Initially hidden */
-        opacity: 0.3; /* 30% opacity */
-      }
-
       /* Media query for medium and larger screens */
       @media (min-width: 768px) {
         .zigzag2 {
@@ -310,17 +931,53 @@
         }
       }
 
-      .zigzag3 {
-        width: 300px; /* Set width to 300px */
-        display: none; /* Initially hidden */
-        opacity: 0.3; /* 30% opacity */
-      }
-
       /* Media query for medium and larger screens */
       @media (min-width: 768px) {
         .zigzag3 {
           display: block; /* Change display to block for medium and larger screens */
         }
+      }
+
+      /* Media query for medium and larger screens */
+      @media (min-width: 768px) {
+        .jtconst1 {
+          position: absolute; /* Set position to absolute for medium and larger screens */
+          top: 0; /* Align to the top */
+          right: 0; /* Align to the right */
+          bottom: 0; /* Align to the bottom */
+          left: 0; /* Align to the left */
+        }
+      }
+
+      /* Media query for medium and larger screens */
+      @media (min-width: 768px) {
+        .onemonthbox {
+          margin-left: 75px; /* Left margin set to 75px for medium screens and above */
+        }
+      }
+
+      .star1 {
+        position: absolute; /* Set the element's position to absolute */
+        top: 2.5rem; /* 10 units * 0.25rem = 2.5rem or 40px */
+        right: 1.25rem; /* 5 units * 0.25rem = 1.25rem or 20px */
+      }
+
+      .star2 {
+        position: absolute; /* Set position to absolute */
+        bottom: 2.5rem; /* 10 units * 0.25rem = 2.5rem or 40px */
+        left: 5rem; /* 20 units * 0.25rem = 5rem or 80px */
+        display: none; /* Initially hidden */
+      }
+      .zigzag2 {
+        width: 300px; /* Set width to 300px */
+        display: none; /* Initially hidden */
+        opacity: 0.3; /* 30% opacity */
+      }
+
+      .zigzag3 {
+        width: 300px; /* Set width to 300px */
+        display: none; /* Initially hidden */
+        opacity: 0.3; /* 30% opacity */
       }
 
       .jtconst1 {
@@ -333,17 +990,6 @@
         width: 100%; /* Set width to 100% */
         gap: 3rem; /* Redundant due to the previous gap property */
         position: relative; /* Set position to relative */
-      }
-
-      /* Media query for medium and larger screens */
-      @media (min-width: 768px) {
-        .jtconst1 {
-          position: absolute; /* Set position to absolute for medium and larger screens */
-          top: 0; /* Align to the top */
-          right: 0; /* Align to the right */
-          bottom: 0; /* Align to the bottom */
-          left: 0; /* Align to the left */
-        }
       }
 
       .onemonthcontain {
@@ -364,13 +1010,6 @@
         position: relative; /* Set position to relative */
       }
 
-      /* Media query for medium and larger screens */
-      @media (min-width: 768px) {
-        .onemonthbox {
-          margin-left: 75px; /* Left margin set to 75px for medium screens and above */
-        }
-      }
-
       .onemonthouter {
         display: flex; /* Enable flexbox layout */
         flex-direction: column; /* Arrange children in a column */
@@ -381,13 +1020,6 @@
       .onemonthinner {
         font-weight: 500; /* Medium font weight */
         font-size: 1rem; /* Base font size (1rem = 16px) */
-      }
-
-      /* Media query for medium and larger screens */
-      @media (min-width: 768px) {
-        .onemonthinner {
-          font-size: 1.875rem; /* Text size 3xl (1.875rem = 30px) */
-        }
       }
 
       .advertismentouter {
@@ -402,27 +1034,11 @@
         font-size: 0.875rem; /* Small text size (text-sm = 0.875rem = 14px) */
       }
 
-      /* Media query for medium and larger screens */
-      @media (min-width: 768px) {
-        .textsize {
-          font-size: 1rem; /* Base text size (text-base = 1rem = 16px) */
-        }
-      }
-
       .freelogo {
         position: absolute; /* Set position to absolute */
         top: -12px; /* Position 12 pixels above the normal position */
         right: -12px; /* Position 3 pixels to the left of the right edge */
         width: 35%; /* Set width to 35% of the parent container */
-      }
-
-      /* Media query for medium and larger screens */
-      @media (min-width: 768px) {
-        .freelogo {
-          right: -80px; /* Adjust position 20 pixels to the left of the right edge */
-          top: -40px; /* Adjust position 10 pixels above the normal position */
-          width: 33.3333%; /* Set width to 1/3 (approximately 33.33%) of the parent container */
-        }
       }
 
       .boxes {
@@ -441,6 +1057,29 @@
 
       /* Media query for medium and larger screens */
       @media (min-width: 768px) {
+        .onemonthinner {
+          font-size: 1.875rem; /* Text size 3xl (1.875rem = 30px) */
+        }
+      }
+
+      /* Media query for medium and larger screens */
+      @media (min-width: 768px) {
+        .textsize {
+          font-size: 1rem; /* Base text size (text-base = 1rem = 16px) */
+        }
+      }
+
+      /* Media query for medium and larger screens */
+      @media (min-width: 768px) {
+        .freelogo {
+          right: -80px; /* Adjust position 20 pixels to the left of the right edge */
+          top: -40px; /* Adjust position 10 pixels above the normal position */
+          width: 33.3333%; /* Set width to 1/3 (approximately 33.33%) of the parent container */
+        }
+      }
+
+      /* Media query for medium and larger screens */
+      @media (min-width: 768px) {
         .boxes {
           justify-content: space-between; /* Justify items between for medium screens and larger */
           flex-wrap: nowrap; /* Prevent wrapping of items */
@@ -452,30 +1091,35 @@
         }
       }
 
-      .stars1 {
-        position: absolute;
-        top: 8rem; /* Tailwind's top-32 corresponds to 8rem */
-        right: 0;
-        display: none; /* This applies the `hidden` class */
-      }
-
       @media (min-width: 768px) {
         .stars1 {
           display: block; /* The `md:block` applies a display block for medium and larger screens */
         }
       }
 
+      @media (min-width: 768px) {
+        .stars2 {
+          display: block; /* The `md:block` class makes it visible on medium and larger screens */
+        }
+      }
+
+      @media (min-width: 768px) {
+        .purplebox {
+          width: 198px; /* Equivalent to md:w-[198px] */
+        }
+      }
+
+      .stars1 {
+        position: absolute;
+        top: 8rem; /* Tailwind's top-32 corresponds to 8rem */
+        right: 0;
+        display: none; /* This applies the `hidden` class */
+      }
       .stars2 {
         position: absolute;
         top: 18rem; /* Tailwind's top-72 corresponds to 18rem */
         left: 2.5rem; /* Tailwind's left-10 corresponds to 2.5rem */
         display: none; /* The `hidden` class hides the element by default */
-      }
-
-      @media (min-width: 768px) {
-        .stars2 {
-          display: block; /* The `md:block` class makes it visible on medium and larger screens */
-        }
       }
 
       .purplebox {
@@ -492,12 +1136,6 @@
         padding-left: 20px; /* Equivalent to px-[20px] */
         padding-right: 20px; /* Tailwind shorthand for padding on both sides */
         column-gap: 1rem; /* Equivalent to gap-x-4 */
-      }
-
-      @media (min-width: 768px) {
-        .purplebox {
-          width: 198px; /* Equivalent to md:w-[198px] */
-        }
       }
 
       .textwhite {
@@ -530,12 +1168,6 @@
         column-gap: 1rem; /* Equivalent to gap-x-4 */
       }
 
-      @media (min-width: 768px) {
-        .yellowbox {
-          width: 198px; /* Equivalent to md:w-[198px] */
-        }
-      }
-
       .textblack {
         color: #000; /* Black color */
       }
@@ -561,26 +1193,12 @@
         column-gap: 1rem; /* Equivalent to gap-x-4 */
       }
 
-      @media (min-width: 768px) {
-        .greenbox {
-          width: 198px; /* Equivalent to md:w-[198px] */
-        }
-      }
-
       .howtouploadouter {
         margin-top: 25px; /* Equivalent to mt-[25px] */
         display: flex; /* Equivalent to flex */
         flex-direction: column; /* Equivalent to flex-col */
         align-items: center; /* Equivalent to items-center */
         justify-content: center; /* Equivalent to justify-center */
-      }
-
-      /* Media query for md:mt-[50px] */
-      @media (min-width: 768px) {
-        /* Adjust based on your design's breakpoints */
-        .howtouploadouter {
-          margin-top: 50px; /* Equivalent to md:mt-[50px] */
-        }
       }
 
       .textcenter {
@@ -592,27 +1210,10 @@
         line-height: 2.25rem; /* 36px */
       }
 
-      /* Media query for md:text-3xl */
-      @media (min-width: 768px) {
-        /* Adjust based on your design's breakpoints */
-        .text3xl {
-          font-size: 1.875rem; /* 30px */
-          line-height: 2.25rem; /* 36px */
-        }
-      }
-
       .infographics {
         padding-left: 0.75rem; /* Equivalent to px-3 (12px) */
         padding-right: 0.75rem; /* Equivalent to px-3 (12px) */
         margin-top: 25px; /* Equivalent to mt-[25px] */
-      }
-
-      /* Media query for mt:mt-[46px] */
-      @media (min-width: 768px) {
-        /* Adjust based on your design's breakpoints */
-        .infographics {
-          margin-top: 26px; /* Equivalent to md:mt-[46px] */
-        }
       }
 
       .wrapperclass {
@@ -629,27 +1230,11 @@
         display: none; /* Equivalent to hidden */
       }
 
-      /* Media query for md:block */
-      @media (min-width: 768px) {
-        /* Adjust based on your design's breakpoints */
-        .stars3 {
-          display: block; /* Equivalent to md:block */
-        }
-      }
-
       .stars4 {
         position: absolute; /* Equivalent to absolute */
         top: 10rem; /* Equivalent to top-40 (40 * 0.25rem = 10rem) */
         left: 5rem; /* Equivalent to left-20 (20 * 0.25rem = 5rem) */
         display: none; /* Equivalent to hidden */
-      }
-
-      /* Media query for md:block */
-      @media (min-width: 768px) {
-        /* Adjust based on your design's breakpoints */
-        .stars4 {
-          display: block; /* Equivalent to md:block */
-        }
       }
 
       .buttonouter {
@@ -711,12 +1296,148 @@
         font-size: 1.25rem; /* Equivalent to text-xl (20px) */
         font-weight: 600; /* Equivalent to font-semibold */
       }
+      @media (min-width: 768px) {
+        .yellowbox {
+          width: 198px; /* Equivalent to md:w-[198px] */
+        }
+      }
+
+      @media (min-width: 768px) {
+        .greenbox {
+          width: 198px; /* Equivalent to md:w-[198px] */
+        }
+      }
+
+      /* Media query for md:mt-[50px] */
+      @media (min-width: 768px) {
+        /* Adjust based on your design's breakpoints */
+        .howtouploadouter {
+          margin-top: 50px; /* Equivalent to md:mt-[50px] */
+        }
+      }
+
+      /* Media query for md:text-3xl */
+      @media (min-width: 768px) {
+        /* Adjust based on your design's breakpoints */
+        .text3xl {
+          font-size: 1.875rem; /* 30px */
+          line-height: 2.25rem; /* 36px */
+        }
+      }
+
+      /* Media query for mt:mt-[46px] */
+      @media (min-width: 768px) {
+        /* Adjust based on your design's breakpoints */
+        .infographics {
+          margin-top: 26px; /* Equivalent to md:mt-[46px] */
+        }
+      }
+
+      /* Media query for md:block */
+      @media (min-width: 768px) {
+        /* Adjust based on your design's breakpoints */
+        .stars3 {
+          display: block; /* Equivalent to md:block */
+        }
+      }
+
+      /* Media query for md:block */
+      @media (min-width: 768px) {
+        /* Adjust based on your design's breakpoints */
+        .stars4 {
+          display: block; /* Equivalent to md:block */
+        }
+      }
 
       /* Media query for md:text-3xl */
       @media (min-width: 768px) {
         /* Adjust based on your design's breakpoints */
         .mrcorp {
           font-size: 1.875rem; /* Equivalent to text-3xl (30px) */
+        }
+      }
+
+      /* Media query for md:block */
+      @media (min-width: 768px) {
+        /* Adjust based on your design's breakpoints */
+        .stars5 {
+          display: block; /* Equivalent to md:block */
+        }
+      }
+
+      @media (min-width: 768px) {
+        .flowerouter {
+          justify-content: space-between; /* Equivalent to md:justify-between for medium and larger screens */
+        }
+      }
+
+      /* Media query for sm:flex and sm:flex-row */
+      @media (min-width: 640px) {
+        /* Adjust based on your design's breakpoints */
+        .reachouter {
+          flex-direction: row; /* Equivalent to sm:flex-row */
+          justify-content: space-between; /* Equivalent to sm:justify-between */
+        }
+      }
+
+      /* Media query for sm:w-1/2 */
+      @media (min-width: 640px) {
+        /* Adjust based on your design's breakpoints */
+        .reachinner {
+          width: 50%; /* Equivalent to sm:w-1/2 */
+        }
+      }
+
+      @media (min-width: 640px) {
+        /* Equivalent to sm: (small screens) */
+        .reach {
+          font-size: 1.875rem; /* Equivalent to sm:text-3xl (30px) */
+        }
+      }
+
+      @media (min-width: 640px) {
+        /* Equivalent to sm: (small screens) */
+        .atmrpara {
+          font-size: 13px; /* Equivalent to sm:text-[13px] */
+          line-height: 1.5; /* Equivalent to sm:leading-8 (32px) */
+        }
+      }
+
+      @font-face {
+        font-family: "Montserrat"; /* Equivalent to font-montserrat */
+        src: url("path/to/montserrat.woff2") format("woff2"),
+          /* Adjust path as necessary */ url("path/to/montserrat.woff")
+            format("woff"); /* Adjust path as necessary */
+        font-weight: normal; /* Adjust font-weight as needed */
+        font-style: normal; /* Adjust font-style as needed */
+      }
+
+      @media (min-width: 640px) {
+        /* Equivalent to sm: (small screens) */
+        .imgdev {
+          width: 50%; /* Equivalent to sm:w-1/2 */
+        }
+      }
+
+      @media (min-width: 640px) {
+        /* Equivalent to sm: (small screens) */
+        .coupenimg {
+          width: 300px; /* Equivalent to sm:w-[300px] */
+        }
+      }
+
+      @media (min-width: 768px) {
+        /* Equivalent to md: (medium screens) */
+        .coupenimg {
+          width: 95%; /* Equivalent to md:w-[95%] */
+        }
+      }
+
+      @media (min-width: 768px) {
+        /* Equivalent to md: (medium screens) */
+        .choseus {
+          font-size: 1.5rem; /* Equivalent to md:text-2xl (24px) */
+          padding-bottom: 4rem; /* Equivalent to md:pb-16 (64px) */
         }
       }
 
@@ -730,15 +1451,6 @@
         right: 8rem; /* Equivalent to right-32 (32 * 0.25rem = 8rem) */
         display: none; /* Equivalent to hidden */
       }
-
-      /* Media query for md:block */
-      @media (min-width: 768px) {
-        /* Adjust based on your design's breakpoints */
-        .stars5 {
-          display: block; /* Equivalent to md:block */
-        }
-      }
-
       .flowerouter {
         display: flex; /* Equivalent to flex */
         flex-wrap: wrap; /* Equivalent to flex-wrap */
@@ -751,12 +1463,6 @@
         padding-bottom: 32px;
         padding-left: 34px; /* Equivalent to px-[34px] (padding-left and padding-right) */
         padding-right: 34px;
-      }
-
-      @media (min-width: 768px) {
-        .flowerouter {
-          justify-content: space-between; /* Equivalent to md:justify-between for medium and larger screens */
-        }
       }
 
       .flowerinter {
@@ -787,30 +1493,11 @@
         max-width: 85%; /* Equivalent to max-w-[85%] */
         margin: auto; /* Equivalent to m-auto */
       }
-
-      /* Media query for sm:flex and sm:flex-row */
-      @media (min-width: 640px) {
-        /* Adjust based on your design's breakpoints */
-        .reachouter {
-          flex-direction: row; /* Equivalent to sm:flex-row */
-          justify-content: space-between; /* Equivalent to sm:justify-between */
-        }
-      }
-
       .reachinner {
         display: flex; /* Equivalent to flex */
         flex-direction: column; /* Equivalent to flex-col */
         gap: 1.25rem; /* Equivalent to gap-5 (5 * 0.25rem = 1.25rem) */
       }
-
-      /* Media query for sm:w-1/2 */
-      @media (min-width: 640px) {
-        /* Adjust based on your design's breakpoints */
-        .reachinner {
-          width: 50%; /* Equivalent to sm:w-1/2 */
-        }
-      }
-
       .reach {
         font-size: 1.5rem; /* Equivalent to text-2xl (24px) */
         font-weight: 600; /* Equivalent to font-semibold */
@@ -824,14 +1511,6 @@
         ); /* Equivalent to bg-gradient-to-b from-[#F84145] to-[#EFB635] */
         -webkit-background-clip: text; /* Required for some browsers to support background clip */
       }
-
-      @media (min-width: 640px) {
-        /* Equivalent to sm: (small screens) */
-        .reach {
-          font-size: 1.875rem; /* Equivalent to sm:text-3xl (30px) */
-        }
-      }
-
       .fontlight {
         font-weight: 300; /* Equivalent to font-light */
       }
@@ -845,57 +1524,16 @@
         color: #4b5563; /* Equivalent to text-gray-600 */
         line-height: normal; /* Equivalent to !leading-normal */
       }
-
-      @media (min-width: 640px) {
-        /* Equivalent to sm: (small screens) */
-        .atmrpara {
-          font-size: 13px; /* Equivalent to sm:text-[13px] */
-          line-height: 1.5; /* Equivalent to sm:leading-8 (32px) */
-        }
-      }
-
-      @font-face {
-        font-family: "Montserrat"; /* Equivalent to font-montserrat */
-        src: url("path/to/montserrat.woff2") format("woff2"),
-          /* Adjust path as necessary */ url("path/to/montserrat.woff")
-            format("woff"); /* Adjust path as necessary */
-        font-weight: normal; /* Adjust font-weight as needed */
-        font-style: normal; /* Adjust font-style as needed */
-      }
-
       .imgdev {
         display: flex; /* Equivalent to flex */
         justify-content: flex-end; /* Equivalent to justify-end */
         width: 100%; /* Default width */
       }
-
-      @media (min-width: 640px) {
-        /* Equivalent to sm: (small screens) */
-        .imgdev {
-          width: 50%; /* Equivalent to sm:w-1/2 */
-        }
-      }
-
       .coupenimg {
         width: 100%; /* Equivalent to w-full */
         margin-left: auto; /* Equivalent to mx-auto (centers element horizontally) */
         margin-right: auto; /* Equivalent to mx-auto (centers element horizontally) */
       }
-
-      @media (min-width: 640px) {
-        /* Equivalent to sm: (small screens) */
-        .coupenimg {
-          width: 300px; /* Equivalent to sm:w-[300px] */
-        }
-      }
-
-      @media (min-width: 768px) {
-        /* Equivalent to md: (medium screens) */
-        .coupenimg {
-          width: 95%; /* Equivalent to md:w-[95%] */
-        }
-      }
-
       .choseusouter {
         width: 75%; /* Equivalent to w-[75%] */
         margin-left: auto; /* Equivalent to m-auto (centers element horizontally) */
@@ -919,15 +1557,6 @@
         ); /* Equivalent to bg-gradient-to-b from-[#e94f49] to-[#f07d40] */
         padding-bottom: 8rem; /* Equivalent to pb-8 (32px) */
       }
-
-      @media (min-width: 768px) {
-        /* Equivalent to md: (medium screens) */
-        .choseus {
-          font-size: 1.5rem; /* Equivalent to md:text-2xl (24px) */
-          padding-bottom: 4rem; /* Equivalent to md:pb-16 (64px) */
-        }
-      }
-
       /* Note: Ensure to include webkit prefix for background-clip */
       .choseus {
         -webkit-background-clip: text; /* Required for some browsers to support background clip */
@@ -954,12 +1583,6 @@
         }
       }
 
-      .circlesouterdiv {
-        display: grid; /* Equivalent to grid */
-        grid-template-columns: repeat(2, 1fr); /* Equivalent to grid-cols-2 */
-        gap: 2rem; /* Equivalent to gap-8 (32px) */
-      }
-
       @media (min-width: 768px) {
         /* Equivalent to md: (medium screens) */
         .circlesouterdiv {
@@ -970,6 +1593,57 @@
         }
       }
 
+      @media (min-width: 768px) {
+        /* Equivalent to md: (medium screens) */
+        .rectangleouter {
+          height: 130px; /* Equivalent to md:h-[130px] */
+          margin-top: 4rem; /* Equivalent to md:mt-16 (64px) */
+        }
+      }
+
+      @media (min-width: 768px) {
+        .rectangleouter2 {
+          justify-content: space-between;
+        }
+      }
+
+      /* Media query for medium screens and larger */
+      @media (min-width: 768px) {
+        /* Equivalent to md: (medium screens) */
+        .rectangletext1 {
+          font-size: 1.875rem; /* Equivalent to md:text-3xl (30px) */
+        }
+      }
+
+      /* Media query for small screens and larger */
+      @media (min-width: 640px) {
+        /* Equivalent to sm: (small screens) */
+        .rectangletext2 {
+          font-size: 0.875rem; /* Equivalent to sm:text-sm, same as default text-sm */
+        }
+      }
+
+      /* Media query for medium screens and larger */
+      @media (min-width: 768px) {
+        /* Equivalent to md: (medium screens) */
+        .starz {
+          display: block; /* Equivalent to md:block */
+        }
+      }
+
+      /* Media query for medium screens and larger */
+      @media (min-width: 768px) {
+        /* Equivalent to md: (medium screens) */
+        .mradstext {
+          font-size: 1.5rem; /* Equivalent to md:text-2xl (24px) */
+        }
+      }
+
+      .circlesouterdiv {
+        display: grid; /* Equivalent to grid */
+        grid-template-columns: repeat(2, 1fr); /* Equivalent to grid-cols-2 */
+        gap: 2rem; /* Equivalent to gap-8 (32px) */
+      }
       .firstcircle {
         display: flex; /* Equivalent to flex */
         align-items: center; /* Equivalent to items-center */
@@ -1002,15 +1676,6 @@
         justify-content: center; /* Equivalent to justify-center */
         margin-top: 10rem; /* Equivalent to mt-60 (240px) */
       }
-
-      @media (min-width: 768px) {
-        /* Equivalent to md: (medium screens) */
-        .rectangleouter {
-          height: 130px; /* Equivalent to md:h-[130px] */
-          margin-top: 4rem; /* Equivalent to md:mt-16 (64px) */
-        }
-      }
-
       .rectangleouter2 {
         display: flex; /* Equivalent to flex */
         flex-wrap: wrap; /* Equivalent to flex-wrap */
@@ -1020,14 +1685,8 @@
         margin-left: 3rem; /* Equivalent to mx-12 (48px) */
         margin-right: 3rem; /* Equivalent to mx-12 (48px) */
         width: 100%; /* Equivalent to w-full */
-        justify-content:center; /* Equivalent to justify-between */
+        justify-content: center; /* Equivalent to justify-between */
       }
-      @media (min-width:768px) {
-        .rectangleouter2{
-          justify-content: space-between;
-        } 
-      }
-
       .rectanglefirst {
         display: flex; /* Equivalent to flex */
         flex-direction: column; /* Equivalent to flex-col */
@@ -1046,15 +1705,6 @@
           #f07d40
         ); /* Equivalent to bg-gradient-to-b from-[#e94f49] to-[#f07d40] */
       }
-
-      /* Media query for medium screens and larger */
-      @media (min-width: 768px) {
-        /* Equivalent to md: (medium screens) */
-        .rectangletext1 {
-          font-size: 1.875rem; /* Equivalent to md:text-3xl (30px) */
-        }
-      }
-
       .rectangletext2 {
         font-size: 0.875rem; /* Equivalent to text-sm (14px) */
         font-weight: 600; /* Equivalent to font-semibold */
@@ -1062,15 +1712,6 @@
         color: #4a5568; /* Equivalent to text-gray-700 */
         font-family: "Poppins", sans-serif; /* Assuming Poppins is included in your project */
       }
-
-      /* Media query for small screens and larger */
-      @media (min-width: 640px) {
-        /* Equivalent to sm: (small screens) */
-        .rectangletext2 {
-          font-size: 0.875rem; /* Equivalent to sm:text-sm, same as default text-sm */
-        }
-      }
-
       .mrads {
         margin-top: 2rem; /* Equivalent to mt-8 (32px) */
       }
@@ -1081,30 +1722,12 @@
         right: 2.5rem; /* Equivalent to right-10 (40px) */
         display: none; /* Equivalent to hidden */
       }
-
-      /* Media query for medium screens and larger */
-      @media (min-width: 768px) {
-        /* Equivalent to md: (medium screens) */
-        .starz {
-          display: block; /* Equivalent to md:block */
-        }
-      }
-
       .mradstext {
         font-size: 1rem; /* Default font size for smaller screens (16px) */
         font-weight: 400; /* Equivalent to font-normal */
         color: #f9525f; /* Sets the text color */
         margin-bottom: 1.5rem; /* Equivalent to mb-6 (24px) */
       }
-
-      /* Media query for medium screens and larger */
-      @media (min-width: 768px) {
-        /* Equivalent to md: (medium screens) */
-        .mradstext {
-          font-size: 1.5rem; /* Equivalent to md:text-2xl (24px) */
-        }
-      }
-
       .blackcolor {
         color: #010101; /* Sets the text color to the specified hex value */
       }
@@ -1175,80 +1798,204 @@
   <body>
     <div class="container-class">
       <!-- <img src="svgs/EllipseCircle.svg" alt="" class="absolute -z-20 -top-40"> -->
-      <div class="background-shape"></div>
-      <div class="element">
+      <div style="height: 600px; left: -150px" class="background-shape"></div>
+      <div
+        style="
+          padding-left: 41px;
+          padding-right: 41px;
+          padding-top: 32px;
+          padding-bottom: 32px;
+        "
+        class="element"
+      >
         <div class="constructions">
           <img src="svgs/Asset 1@3x 2.svg" alt="" />
-          <div class="element1">
-            <img src="svgs/hello.svg" alt="" />
+          <div
+            style="
+              display: block; /* Show on medium and larger screens */
+              margin-left: 85px; /* Left margin for medium and larger screens */
+              width: auto;
+            "
+            class="element1"
+          >
+            <img
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/hello.svg"
+              alt=""
+            />
           </div>
-          <button class="button-cons">Construction</button>
+          <button
+            style="
+              width: 150px;
+              height: 45px;
+              font-size: 16px;
+              font-weight: bold;
+            "
+            class="button-cons"
+          >
+            Construction
+          </button>
         </div>
         <div class="textcenter">
-          <div class="hello">
+          <div style="display: none" class="hello">
             <img src="svgs/hello.svg" alt="" />
           </div>
           <h1 class="jtconst noto-serif">JT constructions</h1>
-          <h1 class="enjoy">ENJOY</h1>
-          <h1 class="onemonth">One Month of Free Advertising</h1>
+          <h1 style="padding-top: 35px" class="enjoy">ENJOY</h1>
+          <h1 style="font-size: 30px" class="onemonth">
+            One Month of Free Advertising
+          </h1>
           <h1 class="telegraph">
             with<span class="bold telegraph"> MR Ads</span> and grow your reach
             effortlessly
           </h1>
         </div>
       </div>
-      <div class="mobilecontain">
-        <img src="svgs/stars.svg" class="star1" alt="" />
-        <img src="svgs/stars.svg" class="star2" alt="" />
-        <img src="svgs/zigzag.svg" class="zigzag1" alt="" />
-        <img src="svgs/zigzag.svg" alt="" class="zigzag2" />
-        <img src="svgs/zigzag.svg" alt="" class="zigzag3" />
-        <div class="jtconst1">
-          <img src="svgs/jt construction mobile img.png" alt="" class="" />
-          <img src="svgs/jt construction mobile img.png" alt="" />
+      <div
+        style="
+          height: 430px; /* Fixed height for medium and larger screens */
+          margin-top: 0.5rem;
+        "
+        class="mobilecontain"
+      >
+        <img
+          style="right: 5rem"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+          class="star1"
+          alt=""
+        />
+        <img
+          style="display: block"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+          class="star2"
+          alt=""
+        />
+        <img
+          style="
+            width: 300px; /* Width for medium and larger screens */
+            display: block;
+          "
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/zigzag.svg"
+          class="zigzag1"
+          alt=""
+        />
+        <img
+          style="display: block"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/zigzag.svg"
+          alt=""
+          class="zigzag2"
+        />
+        <img
+          style="display: block"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/zigzag.svg"
+          alt=""
+          class="zigzag3"
+        />
+        <div
+          style="
+            position: absolute; /* Set position to absolute for medium and larger screens */
+            top: 0; /* Align to the top */
+            right: 0; /* Align to the right */
+            bottom: 0; /* Align to the bottom */
+            left: 0;
+          "
+          class="jtconst1"
+        >
+          <img
+            src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/jt_construction_mobile_img.png"
+            alt=""
+            class=""
+          />
+          <img
+            src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/jt_construction_mobile_img.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="onemonthcontain">
-        <div class="onemonthbox">
+        <div style="margin-left: 75px" class="onemonthbox">
           <div class="onemonthouter">
-            <h1 class="onemonthinner anton-regular">
+            <h1 style="font-size: 1.875rem" class="onemonthinner anton-regular">
               One Month Free Advertisement
             </h1>
             <div class="advertismentouter">
-              <span class="textsize">Advertisement</span>
-              <span><img src="svgs/Group.svg" alt="" /></span>
-              <span class="textsize">All businesses</span>
-              <span><img src="svgs/Group.svg" alt="" /></span>
-              <span class="textsize">Directory</span>
+              <span style="font-size: 1rem" class="textsize"
+                >Advertisement</span
+              >
+              <span><img src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/Group.svg" alt="" /></span>
+              <span style="font-size: 1rem" class="textsize"
+                >All businesses</span
+              >
+              <span><img src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/Group.svg" alt="" /></span>
+              <span style="font-size: 1rem" class="textsize">Directory</span>
             </div>
           </div>
-          <span><img src="svgs/freelogo.svg" class="freelogo" alt="" /></span>
+          <span
+            ><img
+              style="
+                right: -80px; /* Adjust position 20 pixels to the left of the right edge */
+                top: -40px; /* Adjust position 10 pixels above the normal position */
+                width: 33.3333%;
+              "
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/freelogo.svg"
+              class="freelogo"
+              alt=""
+          /></span>
         </div>
       </div>
-      <div class="boxes">
-        <img src="svgs/stars.svg" class="stars1" alt="" />
-        <img src="svgs/stars.svg" class="stars2" alt="" />
-        <div class="purplebox">
+      <div
+        style="
+          justify-content: space-between; /* Justify items between for medium screens and larger */
+          flex-wrap: nowrap; /* Prevent wrapping of items */
+          gap: 0; /* No vertical gap between items */
+          gap: 1rem; /* Horizontal gap between items (4 units = 1rem = 16px) */
+          margin: 50px auto 0px; /* Center the element horizontally */
+          padding-left: 5.1875rem; /* Left padding (83px = 5.1875rem) */
+          padding-right: 5.1875rem;
+        "
+        class="boxes"
+      >
+        <img
+          style="display: block"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+          class="stars1"
+          alt=""
+        />
+        <img
+          style="display: block"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+          class="stars2"
+          alt=""
+        />
+        <div style="width: 198px" class="purplebox">
           <div>
-            <img src="svgs/eye.svg" alt="" />
+            <img
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/eye.svg"
+              alt=""
+            />
           </div>
           <div class="textwhite">
             <h1 class="bebas-neue-regular text2xlsize">1000</h1>
             <p class="poppins-medium textxs">Quick impressions</p>
           </div>
         </div>
-        <div class="yellowbox">
+        <div style="width: 198px" class="yellowbox">
           <div>
-            <img src="svgs/conversion rate.svg" alt="" />
+            <img
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/conversion_rate.svg"
+              alt=""
+            />
           </div>
           <div class="textwhite">
             <h1 class="bebas-neue-regular text2xlsize textblack">80%</h1>
             <p class="textblack poppins-medium textsm">Conversion Rate</p>
           </div>
         </div>
-        <div class="greenbox">
+        <div style="width: 198px" class="greenbox">
           <div>
-            <img src="svgs/location.svg" alt="" />
+            <img
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/location.svg"
+              alt=""
+            />
           </div>
           <div class="textwhite">
             <h1 class="bebas-neue-regular text2xlsize">5+</h1>
@@ -1256,20 +2003,36 @@
           </div>
         </div>
       </div>
-      <div class="howtouploadouter">
-        <h1 class="anton-regular textcenter text3xl">
+      <div style="margin-top: 50px" class="howtouploadouter">
+        <h1
+          style="font-size: 1.875rem; /* 30px */ line-height: 2.25rem"
+          class="anton-regular textcenter text3xl"
+        >
           HOW TO UPLOAD AN ADVERTISEMENT?
         </h1>
-        <span class="infographics">
-          <img src="svgs/email infographics 1.png" alt="" />
+        <span style="margin-top: 26px" class="infographics">
+          <img
+            src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/email_infographics_1.png"
+            alt=""
+          />
         </span>
       </div>
 
       <!-- ------------------shanwar code start here----------- -->
 
       <div class="wrapper wrapperclass">
-        <img src="svgs/stars.svg" class="stars3" alt="" />
-        <img src="svgs/stars.svg" class="stars4" alt="" />
+        <img
+          style="display: block"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+          class="stars3"
+          alt=""
+        />
+        <img
+          style="display: block"
+          src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+          class="stars4"
+          alt=""
+        />
 
         <div class="buttonouter">
           <!-- Download App Button -->
@@ -1278,28 +2041,60 @@
           <!-- Referral Code Box -->
           <div class="referouter">
             <p class="poppins-medium textxs refercode">Refer code</p>
-            <p class="poppins-medium mrcorp">MRCORP</p>
+            <p style="font-size: 1.875rem" class="poppins-medium mrcorp">
+              MRCORP
+            </p>
           </div>
         </div>
         <!-- ADDITION END -->
 
         <div class="relativeclass">
-          <img src="svgs/stars.svg" class="stars5" alt="" />
+          <img
+            style="display: block"
+            src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+            class="stars5"
+            alt=""
+          />
 
           <!-- first part -->
-          <div class="flowerouter">
-            <img class="w-auto" src="svgs/leftflower.svg" alt="" />
+          <div style="justify-content: space-between" class="flowerouter">
+            <img
+              class="w-auto"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/leftflower.svg"
+              alt=""
+            />
             <div class="flowerinter">
               <div class="flower">
-                <img class="w-auto" src="svgs/android.png" alt="" />
-                <img class="w-auto" src="svgs/android icon.png" alt="" />
+                <img
+                  class="w-auto"
+                  src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/android.png
+                "
+                  alt=""
+                />
+                <img
+                  class="w-auto"
+                  src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/android_icon.png"
+                  alt=""
+                />
               </div>
               <div class="flower">
-                <img class="w-auto" src="svgs/apple.png" alt="" />
-                <img class="w-auto" src="svgs/apple icon.png" alt="" />
+                <img
+                  class="w-auto"
+                  src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/apple.png"
+                  alt=""
+                />
+                <img
+                  class="w-auto"
+                  src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/apple_icon.png"
+                  alt=""
+                />
               </div>
             </div>
-            <img class="w-auto" src="svgs/rightflower.svg" alt="" />
+            <img
+              class="w-auto"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/rightflower.svg"
+              alt=""
+            />
           </div>
           <!-- 2nd part -->
           <!-- <div
@@ -1335,9 +2130,15 @@
             </div>
           </div> -->
 
-          <div class="reachouter">
-            <div class="reachinner">
-              <h1 class="reach">
+          <div
+            style="
+              flex-direction: row; /* Equivalent to sm:flex-row */
+              justify-content: space-between;
+            "
+            class="reachouter"
+          >
+            <div style="width: 50%" class="reachinner">
+              <h1 style="font-size: 1.875rem" class="reach">
                 <span class="fontlight"
                   >Reach Your
                   <span class="fontsemibold">Customers</span> Directly and
@@ -1345,7 +2146,13 @@
                 >
                 <span class="fontsemibold">Business</span>
               </h1>
-              <p class="atmrpara">
+              <p
+                style="
+                  font-size: 13px; /* Equivalent to sm:text-[13px] */
+                  line-height: 1.5;
+                "
+                class="atmrpara"
+              >
                 At MR, we understand the importance of effective advertising.
                 That’s why we offer a unique service that ensures your
                 advertisements are delivered straight to your customers'
@@ -1353,19 +2160,38 @@
                 engagement, leading to exceptional conversion rates.
               </p>
             </div>
-            <div class="imgdev">
+            <div style="width: 50%" class="imgdev">
               <img
+                style="width: 95%"
                 class="coupenimg"
                 alt="Image"
-                src="svgs/Red and Green Illustrative Restaurant Voucher Coupon (1) 1.svg"
+                src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/Red_and_Green_Illustrative_Restaurant_Voucher_Coupon_1_1.svg"
               />
             </div>
           </div>
 
           <div class="choseusouter">
-            <h1 class="choseus">Why Choose Our Direct-to-Inbox Advertising?</h1>
-            <div class="dashedborder">
-              <div class="circlesouterdiv">
+            <h1
+              style="
+                font-size: 1.5rem; /* Equivalent to md:text-2xl (24px) */
+                padding-bottom: 4rem;
+              "
+              class="choseus"
+            >
+              Why Choose Our Direct-to-Inbox Advertising?
+            </h1>
+            <div
+              style="
+                flex-direction: row;
+                border: 2px dashed #ea5947;
+                border-radius: 9999px;
+              "
+              class="dashedborder bordersmallscreen"
+            >
+              <div
+                style="grid-template-columns: repeat(4, 1fr)"
+                class="circlesouterdiv"
+              >
                 <div class="firstcircle">
                   <h1 class="firstcircletext public-sans">
                     Guaranteed Delivery
@@ -1386,32 +2212,57 @@
             </div>
           </div>
 
-          <div class="rectangleouter">
-            <div class="rectangleouter2">
+          <div
+            style="
+              height: 130px; /* Equivalent to md:h-[130px] */
+              margin-top: 4rem;
+            "
+            class="rectangleouter"
+          >
+            <div style="justify-content: space-between" class="rectangleouter2">
               <div class="rectanglefirst">
-                <h1 class="rectangletext1">12,000+</h1>
-                <p class="rectangletext2">Ads published</p>
+                <h1 style="font-size: 1.875rem" class="rectangletext1">
+                  12,000+
+                </h1>
+                <p style="font-size: 0.875rem" class="rectangletext2">
+                  Ads published
+                </p>
               </div>
               <div class="rectanglefirst">
-                <h1 class="rectangletext1">8,000+</h1>
-                <p class="rectangletext2">Clients</p>
+                <h1 style="font-size: 1.875rem" class="rectangletext1">
+                  8,000+
+                </h1>
+                <p style="font-size: 0.875rem" class="rectangletext2">
+                  Clients
+                </p>
               </div>
               <div class="rectanglefirst">
-                <h1 class="rectangletext1">2.5M+</h1>
-                <p class="rectangletext2">Users reached</p>
+                <h1 style="font-size: 1.875rem" class="rectangletext1">
+                  2.5M+
+                </h1>
+                <p style="font-size: 0.875rem" class="rectangletext2">
+                  Users reached
+                </p>
               </div>
               <div class="rectanglefirst">
-                <h1 class="rectangletext1">23%</h1>
-                <p class="rectangletext2">Conversion rate</p>
+                <h1 style="font-size: 1.875rem" class="rectangletext1">23%</h1>
+                <p style="font-size: 0.875rem" class="rectangletext2">
+                  Conversion rate
+                </p>
               </div>
             </div>
           </div>
 
           <!-- Call to Action Banner -->
           <div class="bgwhite mrads">
-            <img src="svgs/stars.svg" class="starz" alt="" />
+            <img
+              style="display: block"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/stars.svg"
+              class="starz"
+              alt=""
+            />
             <div class="textcenter">
-              <h2 class="mradstext anton-regular">
+              <h2 style="font-size: 1.5rem" class="mradstext anton-regular">
                 MR ADS COST ALMOST NOTHING, <br /><span class="blackcolor">
                   YET CAN SKYROCKET YOUR BUSINESS GROWTH!</span
                 >
@@ -1421,14 +2272,36 @@
             </div>
           </div>
           <div class="followusouter">
-            <img class="bar1" src="svgs/bordersvg.svg" alt="" />
+            <img
+              style="display: block"
+              class="bar1"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/bordersvg.svg"
+              alt=""
+            />
             <div class="followus anton-regular">Follow us:</div>
-            <img class="bar1" src="svgs/bordersvg.svg" alt="" />
+            <img
+              style="display: block"
+              class="bar1"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/bordersvg.svg"
+              alt=""
+            />
           </div>
           <div class="iconsouter">
-            <img class="iconslength" src="svgs/facebook (3).svg" alt="" />
-            <img class="iconslength" src="svgs/instagram (2).svg" alt="" />
-            <img class="iconslength" src="svgs/twitter (2).svg" alt="" />
+            <img
+              class="iconslength"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/facebook_3.svg"
+              alt=""
+            />
+            <img
+              class="iconslength"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/instagram_2.svg"
+              alt=""
+            />
+            <img
+              class="iconslength"
+              src="https://data-mr-corp.s3.amazonaws.com/MR/Logo/twitter_2.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>
